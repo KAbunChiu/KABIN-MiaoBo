@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+target ‘KABINMaoBo'do
+pod 'Masonry', '~> 1.0.1'
+pod 'MJExtension', '~> 3.0.10'
+pod 'MJRefresh', '~> 3.1.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDWebImage', '~> 3.7.6'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'M13ProgressSuite', '~> 1.2.7'
+pod 'MBProgressHUD', '~> 0.9.2'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+pod 'LFLiveKit'
+
+
+end
+

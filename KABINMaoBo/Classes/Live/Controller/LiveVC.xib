@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveVC">
+            <connections>
+                <outlet property="beautiBtn" destination="Dla-Ah-sPE" id="Vn7-Q4-yI6"/>
+                <outlet property="livingBtn" destination="538-SX-ndU" id="YTQ-Ww-coe"/>
+                <outlet property="statusLabel" destination="d5v-Xk-8DD" id="zmT-Da-jQg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-Ah-sPE">
+                    <rect key="frame" x="20" y="30" width="170" height="30"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.71031591487804346" blue="0.82706163245320041" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aec-fh-tN6"/>
+                        <constraint firstAttribute="width" constant="170" id="zNO-8y-Czg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="智能美颜已经开启" image="icon_beautifulface_19x19_.png"/>
+                    <connections>
+                        <action selector="beautiBtn:" destination="-1" eventType="touchUpInside" id="U8r-NI-5Dx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-Mm-EN8">
+                    <rect key="frame" x="255" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ilW-Le-TZh"/>
+                        <constraint firstAttribute="width" constant="40" id="rh9-FS-xbV"/>
+                    </constraints>
+                    <state key="normal" image="camera_change_40x40_.png"/>
+                    <connections>
+                        <action selector="switchBtn:" destination="-1" eventType="touchDragInside" id="9PB-f3-sMt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ze-D5-JIm">
+                    <rect key="frame" x="315" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TjJ-16-QCp"/>
+                        <constraint firstAttribute="width" constant="40" id="dk7-un-gmT"/>
+                    </constraints>
+                    <state key="normal" image="talk_close_40x40_.png"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="DhP-J4-fyA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态: 未知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5v-Xk-8DD">
+                    <rect key="frame" x="148.5" y="90" width="78.5" height="21"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.71031591490000001" blue="0.82706163249999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="538-SX-ndU">
+                    <rect key="frame" x="50" y="583" width="275" height="34"/>
+                    <state key="normal" title="开始直播"/>
+                    <connections>
+                        <action selector="beginLive:" destination="-1" eventType="touchUpInside" id="kg1-qJ-NgP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dla-Ah-sPE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4M9-kj-DPt"/>
+                <constraint firstItem="Dla-Ah-sPE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="763-BC-aEi"/>
+                <constraint firstItem="d5v-Xk-8DD" firstAttribute="top" secondItem="Dla-Ah-sPE" secondAttribute="bottom" constant="30" id="ESf-QJ-cs9"/>
+                <constraint firstItem="9Ze-D5-JIm" firstAttribute="leading" secondItem="Jlz-Mm-EN8" secondAttribute="trailing" constant="20" id="Huq-7W-0jb"/>
+                <constraint firstItem="d5v-Xk-8DD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P5U-j3-rrc"/>
+                <constraint firstItem="9Ze-D5-JIm" firstAttribute="centerY" secondItem="Dla-Ah-sPE" secondAttribute="centerY" id="Qdy-3k-Tv6"/>
+                <constraint firstItem="Jlz-Mm-EN8" firstAttribute="centerY" secondItem="Dla-Ah-sPE" secondAttribute="centerY" id="TfY-Yx-NaE"/>
+                <constraint firstAttribute="bottom" secondItem="538-SX-ndU" secondAttribute="bottom" constant="50" id="bkc-3o-Zhn"/>
+                <constraint firstAttribute="trailing" secondItem="9Ze-D5-JIm" secondAttribute="trailing" constant="20" id="fLL-IU-pmn"/>
+                <constraint firstItem="538-SX-ndU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="nzx-SL-RMk"/>
+                <constraint firstAttribute="trailing" secondItem="538-SX-ndU" secondAttribute="trailing" constant="50" id="wkY-Sb-E7l"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_change_40x40_.png" width="40" height="40"/>
+        <image name="icon_beautifulface_19x19_.png" width="19" height="19"/>
+        <image name="talk_close_40x40_.png" width="40" height="40"/>
+    </resources>
+</document>
